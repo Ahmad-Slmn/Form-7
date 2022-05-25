@@ -22,7 +22,7 @@ icun1.onclick = function () {
 
         this.className = "fa-regular fa-eye";
 
-        this.style.color = "#039884";
+        this.style.color = "#ff0000c2";
 
     } else {
         password1.type = "password";
@@ -54,7 +54,7 @@ icun2.onclick = function () {
 
         this.className = "fa-regular fa-eye";
 
-        this.style.color = "#039884";
+        this.style.color = "#ff0000c2";
 
     } else {
         password2.type = "password";
