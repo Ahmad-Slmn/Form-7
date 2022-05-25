@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    text-decoration: none;
+    text-transform: capitalize
+}
+
+body {
+    background-color: #353535ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh
+}
+
+:root {
+    --trans: .4s ease-in-out
+}
+
+::placeholder {
+    transition: var(--trans);
+    font-weight: bold
+}
+
+:focus::placeholder {
+    opacity: 0
+}
+
+.box {
+    background-color: #e5dddd;
+    width: 400px;
+    height: 430px;
+    /*    height: 510px;*/
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden !important
+}
+
+.box > div {
+    position: absolute;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr))
+}
+
+
+.box > div span {
+    height: 5px
+}
+
+.box > div span:first-of-type {
+    background: #008051f2;
+}
+
+.box > div span:nth-child(2) {
+    background: #8500ffe3;
+    left: 81px;
+}
+
+.box > div span:nth-child(3) {
+    background: #007effe0;
+    left: 161px;
+}
+
+.box > div span:nth-child(4) {
+    background: #ff0000c2;
+    left: 240px;
+}
+
+.box > div span:last-of-type {
+    background: #ffff00db;
+    left: 320px;
+}
+
+
+.box form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 30px;
+    position: absolute;
+    transition: var(--trans);
+    overflow: hidden;
+    left: 40px;
+    align-items: center
+}
+
+.box form:last-of-type {
+    left: 100%;
+    margin-top: 10px
+}
+
+.box form:last-of-type input {
+    margin: 15px 0;
+    padding: 14px 8px
+}
+
+
+.box form:last-of-type > i {
+
+    bottom: 148px
+}
+
+
+form h1 {
+    margin-bottom: 30px;
+    color: #1d1b38;
+    position: relative;
+    top: 15px
+}
+
+.box form:last-of-type > h1 {
+    top: 20px
+}
+
+form input {
+    padding: 15px 8px;
+    margin: 20px 0;
+    width: 100%;
+    outline: none;
+    transition: var(--trans);
+    border: 1px solid
+}
+
+form input:focus {
+    border-color: #ff0000c2
+}
+
+form input[type="submit"] {
+    background: #ff0000c2;
+    outline: none;
+    border: 0;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer
+}
+
+.box form:last-of-type > a {
+    margin: 10px 0
+}
+
+form > a {
+    color: #007eff;
+    margin: 20px 0;
+    width: fit-content
+}
+
+form i {
+    position: absolute;
+    bottom: 187px;
+    right: 5px;
+    cursor: pointer;
+    transition: var(--trans)
+}
+
+@media(max-width:430px) {
+
+    .box {
+        width: 90%;
+    }
+}
