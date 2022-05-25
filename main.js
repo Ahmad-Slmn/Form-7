@@ -9,7 +9,7 @@ register.onclick = function (e) {
 
     e.preventDefault()
 
-    form2.style.left = "40px";
+    form2.style.left = "34px";
 
     form1.style.left = "-100%"
 }
@@ -41,7 +41,7 @@ sign.onclick = function (e) {
 
     e.preventDefault()
 
-    form1.style.left = "40px";
+    form1.style.left = "34px";
 
     form2.style.left = "100%"
 }
