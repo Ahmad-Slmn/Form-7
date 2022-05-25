@@ -85,7 +85,7 @@ body {
     position: absolute;
     transition: var(--trans);
     overflow: hidden;
-    left: 3px;
+    left: 34px;
     align-items: center
 }
 
